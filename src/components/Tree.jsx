@@ -1,15 +1,10 @@
-import AccordionHeader from "./accordionHeader";
+import AccordionItem from "./accordionItem";
 
 export default function Tree() {
   return (
-    <div
-      className="accordion"
-      id="accordionExample"
-      style={{ Width: "85%", margin: "auto" }} // ancho fijo para evitar saltos
-    >
+    <div className="accordion" id="accordionExample" style={{ Width: "85%", margin: "25px 2rem"}}>
       
-      
-      <AccordionHeader idBase="One" titulo="Descargar CV" defaultOpen={false}>
+      <AccordionItem idBase="One" titulo="Descargar CV" defaultOpen={false}>
         <p>Acá podés descargar mi CV en varios formatos:</p>
             <ul>
               <li>
@@ -28,87 +23,24 @@ export default function Tree() {
                 </a>
               </li>
             </ul>
-      </AccordionHeader>
+      </AccordionItem>
 
-      <AccordionHeader idBase="Two" titulo="Presentación" defaultOpen={false}>
-        <h3>Hola, soy Román López Casalá</h3>
-            <p>Desarrollador web fullstack, amante del código limpio y el sarcasmo elegante.</p>
-            <img
-              src="/mi-foto.jpg"
-              alt="Foto de Román"
-              style={{ maxWidth: "100%", height: "auto", display: "block" }}
-            />
-      </AccordionHeader>
+      <AccordionItem idBase="Two" titulo="Presentación" defaultOpen={false}>
+        <h3>Hola, soy Román</h3>
+            <p>Estudiante de sistemas, Desarrollador web y una persona agradecida de que leas esto.</p>
+            <p>Esta pagina la uso para tener el CV y ciertos links a mano pero si te interesa conocer mi trabajo, te recomiendo que revises aqui:</p>
+            <a href="https://roman-lc.github.io/devfolio/" target="_blank" rel="noreferrer">Portafolio link</a>
+      </AccordionItem>
 
+      <AccordionItem idBase="Three" titulo="Legendario" defaultOpen={false}>
+        <p>A veces hace falta salir a buscar lo asombroso, espero que esto te ayude:</p>
+        <a href="https://roman-lc.github.io/legendary/" target="_blank" rel="noreferrer">
+          Legendary
+        </a>
+      </AccordionItem>
 
-      <div className="accordion-item">
-
-        <h2 className="accordion-header" id="headingThree">
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Proyectos
-          </button>
-        </h2>
-
-        <div
-          id="collapseThree"
-          className="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <p>Aquí algunos proyectos destacados:</p>
-            <ul>
-              <li>
-                <a href="https://github.com/roman/mi-proyecto1" target="_blank" rel="noreferrer">
-                  Proyecto 1
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/roman/mi-proyecto2" target="_blank" rel="noreferrer">
-                  Proyecto 2
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/roman/mi-proyecto3" target="_blank" rel="noreferrer">
-                  Proyecto 3
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div className="accordion-item">
-
-        <h2 className="accordion-header" id="headingFour">
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseFour"
-            aria-expanded="false"
-            aria-controls="collapseFour"
-          >
-            Contacto
-          </button>
-        </h2>
-
-        <div
-          id="collapseFour"
-          className="accordion-collapse collapse"
-          aria-labelledby="headingFour"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <p>Me podés encontrar en:</p>
+      <AccordionItem idBase="Four" titulo="Contacto" defaultOpen={false}>
+        <p>Me podés encontrar en:</p>
             <ul>
               <li>Email: roman@example.com</li>
               <li>
@@ -124,39 +56,12 @@ export default function Tree() {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
+      </AccordionItem>
 
-      </div>
+      <AccordionItem idBase="Five" titulo="Otras cosas" defaultOpen={false}>
+        <p>Más info, hobbies y lo que se me ocurra poner.</p>
+      </AccordionItem>
 
-
-      <div className="accordion-item">
-
-        <h2 className="accordion-header" id="headingFive">
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseFive"
-            aria-expanded="false"
-            aria-controls="collapseFive"
-          >
-            Otras cosas
-          </button>
-        </h2>
-
-        <div
-          id="collapseFive"
-          className="accordion-collapse collapse"
-          aria-labelledby="headingFive"
-          data-bs-parent="#accordionExample"
-        >
-          <div className="accordion-body">
-            <p>Más info, hobbies y lo que se me ocurra poner.</p>
-          </div>
-        </div>
-
-      </div>
     </div>
   );
 }
