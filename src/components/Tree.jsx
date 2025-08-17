@@ -1,5 +1,8 @@
 import AccordionItem from "./accordionItem";
 
+import cv from "../assets/cv.pdf";
+import cv_ingles from "../assets/cv_ingles.pdf";
+
 export default function Tree() {
   return (
     <div className="accordion" id="accordionExample" style={{ Width: "85%", margin: "25px 2rem"}}>
@@ -8,18 +11,13 @@ export default function Tree() {
         <p>Acá podés descargar mi CV en varios formatos:</p>
             <ul>
               <li>
-                <a href="/cv.pdf" download>
+                <a href={cv} download>
                   PDF
                 </a>
               </li>
               <li>
-                <a href="/cv.docx" download>
-                  Word
-                </a>
-              </li>
-              <li>
-                <a href="/cv.txt" download>
-                  Texto plano
+                <a href={cv_ingles} download>
+                  PDF (Inglés)
                 </a>
               </li>
             </ul>
