@@ -23,7 +23,7 @@ export default function Tree() {
             </ul>
       </AccordionItem>
 
-      <AccordionItem idBase="Two" titulo="Presentación" defaultOpen={false}>
+      <AccordionItem idBase="Two" titulo="Presentación" defaultOpen={true}>
         <h3>Hola, soy Román</h3>
             <p>Estudiante de sistemas, Desarrollador web y una persona agradecida de que leas esto.</p>
             <p>Esta pagina la uso para tener el CV y ciertos links a mano pero si te interesa conocer mi trabajo, te recomiendo que revises aqui:</p>
