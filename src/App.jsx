@@ -41,7 +41,7 @@ function App() {
       />
 
       <h1 className="text-center mb-0 text-white">Román Lopez Casala</h1>
-      <p className="text-center mb-0 text-white shadow-lg">Ya tu sabes, un LinkTree</p>
+      <p className="text-center mb-0 text-white shadow-lg">Mis links en un formato simpatico para moviles</p>
 
       <div className="mt-3 text-white" style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
 

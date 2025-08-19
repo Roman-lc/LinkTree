@@ -56,8 +56,8 @@ export default function Tree() {
             </ul>
       </AccordionItem>
 
-      <AccordionItem idBase="Five" titulo="Otras cosas" defaultOpen={false}>
-        <p>Más info, hobbies y lo que se me ocurra poner.</p>
+      <AccordionItem idBase="Five" titulo="Sección en construcción" defaultOpen={false}>
+        <p>🚧Este contenido todavía no está disponible, pero lo estaremos actualizando en breve.</p>
       </AccordionItem>
 
     </div>
