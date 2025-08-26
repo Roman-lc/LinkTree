@@ -1,0 +1,7 @@
+-El Nombre del archivo del Cv podria tener ya el nombre en vez de simplemente Cv
+
+-Crear un mail excluisvamente para poner en el cv y la pagina
+
+-Enviar mail a traves de una api
+
+-
