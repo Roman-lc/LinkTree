@@ -38,19 +38,12 @@ export default function Tree() {
       </AccordionItem>
 
       <AccordionItem idBase="Four" titulo="Contacto" defaultOpen={false}>
-        <p>Me podés encontrar en:</p>
+        <p>Me podés contactar en:</p>
             <ul>
-              <li>Email: roman@example.com</li>
+              <li>Email: roman.lopez.casala@google.com</li>
               <li>
-                LinkedIn:{" "}
-                <a href="https://linkedin.com/in/roman" target="_blank" rel="noreferrer">
-                  linkedin.com/in/roman
-                </a>
-              </li>
-              <li>
-                Twitter:{" "}
-                <a href="https://twitter.com/roman" target="_blank" rel="noreferrer">
-                  @roman
+                <a href="https://wa.me/5491165459217" target="_blank">
+                  <button>💬 Contactar por WhatsApp</button>
                 </a>
               </li>
             </ul>
